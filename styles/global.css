@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --calor-brand-light: #F67841;
+  --color-brand-mid: #F3541C;
+  --color-brand-dark: #E43A12;
+
+  --color-text-primary: #292524;
+  --color-text-secondary: #57534E;
+  --color-text-tertiary: #8F8881;
+  --color-text-highlight: #E43A12;
+
+  --color-surface-primary: #FFFFFF;
+  --color-surface-secondary: #FEE7D6;
+  --color-surcace-disabled: #E7E5E4;
+
+  --color-stroke-default: #D6D3D1;
+  --color-stroke-highlight: #F3541C;
+
+  --color-semantic-error: #DC2626;
+
+  --color-orange: #F9A474;
+  --color-yellow: #FEDF6F;
+  --color-green: #C7D78D;
+  --color-blue: #B8CEDC;
+  --color-violet: #C3B2E7;
+  --color-pink: #F682A5;
+
+  --font-family-poppins: "Poppins", sans-serif;
+
+  --text-h1: 700 32px/120% var(--font-family-poppins);
+  --text-h2: 700 24px/120% var(--font-family-poppins);
+  --text-h3: 700 20px/120% var(--font-family-poppins);
+  --text-h4: 700 16px/120% var(--font-family-poppins);
+  --text-md: 400 16px/120% var(--font-family-poppins);
+  --text-sm: 400 14px/120% var(--font-family-poppins);
+}
