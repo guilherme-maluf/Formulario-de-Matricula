@@ -39,6 +39,6 @@
   --text-h2: 700 24px/120% var(--font-family-poppins);
   --text-h3: 700 20px/120% var(--font-family-poppins);
   --text-h4: 700 16px/120% var(--font-family-poppins);
-  --text-md: 400 16px/120% var(--font-family-poppins);
-  --text-sm: 400 14px/120% var(--font-family-poppins);
+  --text-md: 400 16px/150% var(--font-family-poppins);
+  --text-sm: 400 14px/140% var(--font-family-poppins);
 }

@@ -1,0 +1,34 @@
+body.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-surface-secondary);
+  width: 624px;
+  height: 848px;
+  padding: 64px;
+
+  header {
+    width: 496px;
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font: var(--text-h1);
+    color: var(--color-text-primary) ;
+
+    span{
+      color: var(--color-stroke-highlight) ;
+    }
+  }
+
+  p {
+    font: var(--text-md);
+    color: var(--color-text-secondary);
+  }
+
+  a {
+    width: 496px;
+  }
+
+}
+
