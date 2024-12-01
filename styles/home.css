@@ -8,13 +8,17 @@ body.home {
   padding: 64px;
 
   header {
-    width: 496px;
+    height: 196px;
+    width: auto;
     margin-bottom: 32px;
   }
 
   h1 {
-    font: var(--text-h1);
+    font: var(--text-h0);
     color: var(--color-text-primary) ;
+    height: 100px;
+    width: auto;
+    margin-block: 8px;
 
     span{
       color: var(--color-stroke-highlight) ;
@@ -24,6 +28,8 @@ body.home {
   p {
     font: var(--text-md);
     color: var(--color-text-secondary);
+    height: 48px;
+    width: auto;
   }
 
   a {
