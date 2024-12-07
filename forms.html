@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estrelas do Amanhã - Formulário de Matrícula</title>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body class="forms">
+  <form>
   <header class="forms">
   <a id="back" href="index.html">
     <i><img src="assets/icons/arrow-left-02.svg" alt=""></i>
@@ -14,10 +16,8 @@
   <h2>Formulário de matrícula</h2>
   <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
   </header>
-  <form>
-
   <section id="info_child" class="forms">
-    <h3>Informações da criança</h3>
+    <h4>Informações da criança</h4>
     <div>
       <label for="">Nome completo</label>
       <input type="text" name="" id="">
@@ -35,23 +35,28 @@
     </div>
     <div>
       <label for="">Informações médicas</label>
-      <input type="text" name="" id="">
+      <textarea id="mensagem" name="mensagem" rows="4" cols="40" maxlength="500" placeholder="Escreva aqui..."></textarea>
     </div>
     <div>
-      <label for="">Certidão de nascimento</label>
-      <input type="file" name="" id="">
+      <label for="file_upload" class="custom-file-upload">Certidão de nascimento
+        <div class="custom-file-upload">
+          <img src="assets/icons/cloud-upload.svg" alt="Escolher arquivo">
+          <p>Clique aqui para selecionar arquivos</p>
+        </div>
+      </label>
+      <input type="file" name="" id="file_upload">
     </div>
 
   </section>
 
   <section id="adress" class="forms">
-    <h3>Endereço residencial</h3>
+    <h4>Endereço residencial</h4>
     <div>
       <label for="">CEP</label>
       <input type="text" name="" id="">
     </div>
-    <div>
-      <div>
+    <div class="double">
+      <div class="maior">
         <label for="">Rua</label>
         <input type="text" name="" id="">
       </div>
@@ -60,8 +65,8 @@
         <input type="text" name="" id="">
       </div>
     </div>
-    <div>
-      <div>
+    <div class="double">
+      <div class="maior">
         <label for="">Cidade</label>
         <input type="text" name="" id="">
       </div>
@@ -73,7 +78,7 @@
   </section>
 
   <section id="info_parents" class="forms">
-    <h3>Informações do responsável</h3>
+    <h4>Informações do responsável</h4>
     <div>
       <label for="">Nome do responsável</label>
       <input type="text" name="" id="">
@@ -90,20 +95,55 @@
   </section>
 
   <section id="options" class="forms">
-    <h3>Opções de matrícula</h3>
+    <h4>Opções de matrícula</h4>
     <div>
       <label for="shift">Selecione o turno de estudo</label>
-      <div id="manha"><input type="radio"><img src="assets/icons/sun-cloud-02.svg" alt="Turno da manhã"> <p>Manhã</p></div>
-      <div id="tarde"><input type="radio"><img src="assets/icons/sun-02.svg" alt="Turno da tarde"> <p>Tarde</p></div>
+      <div  class="periodo">
+        <div class="turno">
+          <input type="radio">
+          <div class="card">
+            <img src="assets/icons/sun-cloud-02.svg" alt="Turno da manhã">
+            <p>Manhã</p>
+          </div>
+        </div>
+        <div class="turno">
+          <input type="radio">
+          <div class="card">
+            <img src="assets/icons/sun-02.svg" alt="Turno da tarde"> 
+            <p>Tarde</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <label for="shift">Em qual esporte você gostaria de inscrever seu filho?</label>
-      <div id="futebol"><input type="radio"><img src="assets/icons/football.svg" alt="Futebol"><p>Futebol</p></div>
-      <div id="basquete"><input type="radio"><img src="assets/icons/basketball-02.svg" alt="Basquete"><p>Basquete</p></div>
-      <div id="natacao"><input type="radio"><img src="assets/icons/swimming.svg" alt="Natação"><p>Natação</p></div>
-      <div id="yoga"><input type="radio"><img src="assets/icons/yoga-02.svg" alt="Yoga"><p>Yoga</p></div>
-      <div id="volei"><input type="radio"><img src="assets/icons/volleyball.svg" alt="Voleibol"><p>Volei</p></div>
-      <div id="luta"><input type="radio"><img src="assets/icons/boxing-glove-01.svg" alt="Lutas"><p>Luta</p></div>
+
+    <div id="sports">
+      <label for="">Em qual esporte você gostaria de inscrever seu filho?</label>
+      <div id="grid">
+      <div id="futebol"><input type="radio">
+        <div class="card">
+          <img src="assets/icons/football.svg" alt="Futebol"><p>Futebol</p></div>
+        </div>
+      <div id="basquete"><input type="radio">
+        <div class="card">
+          <img src="assets/icons/basketball-02.svg" alt="Basquete"><p>Basquete</p></div>
+        </div>
+      <div id="natacao"><input type="radio">
+        <div class="card">
+          <img src="assets/icons/swimming.svg" alt="Natação"><p>Natação</p></div>
+        </div>
+      <div id="yoga"><input type="radio">
+        <div class="card">
+          <img src="assets/icons/yoga-02.svg" alt="Yoga"><p>Yoga</p></div>
+        </div>
+      <div id="volei"><input type="radio">
+        <div class="card">
+          <img src="assets/icons/volleyball.svg" alt="Voleibol"><p>Volei</p></div>
+        </div>
+      <div id="luta"><input type="radio">
+        <div class="card">
+          <img src="assets/icons/boxing-glove-01.svg" alt="Lutas"><p>Luta</p></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -113,7 +153,10 @@
       Declaro que li e concordo com <span>os Termos e Condições</span> e com a <span></span>Política de Privacidade</span> da escola Estrela do Amanhã. 
     </label>
   </div>
-  <div id="save" class="forms"></div>
+  <div id="save" class="forms">
+    <button id="respostas">Salvar respostas</button>
+    <button id="matricula">Fazer matrícula</button>
+  </div>
 </form>
 </body>
 </html>

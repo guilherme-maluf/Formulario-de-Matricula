@@ -1,0 +1,208 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+
+body.forms {
+
+  padding: 64px;
+  width: 656px;
+  height: auto;
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  label {
+    font: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  input[type="text"], input[type="email"], input[type="date"], select, textarea{
+    font: var(--text-md);
+    color: var(--color-text-secondary);
+
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-stroke-default);
+    border-radius: 8px;
+    margin-top: 4px;
+    width: 100%;
+
+    &:focus {
+      border: 4px solid var(--color-stroke-highlight);
+      /* border: 4px solid var(--color-surface-secondary); */
+    }
+
+  }
+
+  input[type="radio"] {
+    text-align: left;
+    cursor: pointer;
+    padding: 10px ;
+    position: relative;
+    left: 8px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+  }
+
+  h4 {
+    font: var(--text-h4);
+    color: var(--color-text-primary);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font: var(--text-icon);
+    color: var(--color-text-primary);
+    gap: 8px;
+    padding: 0px 16px 16px;
+    
+    img {
+      width: 48px;
+      height: 48px;
+    }
+
+  }
+
+  header.forms {
+    a {
+      display: flex;
+      flex-direction: row;
+      font: var(--text-md);
+      color: var(--color-text-secondary);
+      height: 24px;
+      width: auto;
+      gap: 8px;
+    }
+
+    h2 {
+      margin-top: 24px;
+      font: var(--text-h2);
+      color: var(--color-text-primary);
+    }
+
+    p {
+      margin-top: 8px;
+      font: var(--text-md);
+      color: var(--color-text-secondary);
+    }
+  }
+
+  section#info_child {
+
+    input[type="file"] {
+      display: none;
+      
+    }
+
+    label.custom-file-upload {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+  
+    .custom-file-upload img {
+      height: 48px;
+    }
+  
+    div.custom-file-upload {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-block:28px;
+      border: 1px dashed var(--color-stroke-default);
+      border-radius: 8px;
+      color: var(--color-text-none);
+  
+      p {
+        margin-top: 4px;
+        width: 157px;
+      }
+    }
+
+  }
+
+  section#adress {
+
+    & .double {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      & .maior {
+        flex:0 0 300px;
+      }
+
+    }
+
+  }
+
+  section#info_parents {
+    p {
+      font: var(--text-sm);
+      color: var(--color-text-secondary);
+      margin-top: 4px;
+    }
+  }
+
+  section#options {
+
+    .periodo {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    .turno {
+
+    margin-top: 10px;
+    height: 128px;
+    border: 1px solid var(--color-stroke-default);
+    border-radius: 8px;
+    
+    }
+
+    div#sports {
+
+      div:has(input) {
+        height: 128px;
+        width: 120px;
+        border: 1px solid var(--color-stroke-default);
+        border-radius: 8px;
+      }
+
+      #grid {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: 100%;
+        border: none;
+        height: auto;
+      }
+
+    }
+
+  }
+
+  div#declaration {
+    
+  }
+
+}

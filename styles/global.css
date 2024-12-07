@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -12,6 +13,7 @@
   --color-brand-mid: #F3541C;
   --color-brand-dark: #E43A12;
 
+  --color-text-none: #A8A29E;
   --color-text-primary: #292524;
   --color-text-secondary: #57534E;
   --color-text-tertiary: #8F8881;
@@ -42,7 +44,7 @@
   --text-h3: 600 20px/125% var(--font-family-poppins);
   --text-h4: 600 16px/125% var(--font-family-poppins);
   --text-md: 400 16px/150% var(--font-family-poppins);
-  --text-sm: 400 14px/150% var(--font-family-poppins);
+  --text-sm: 400 14px/140% var(--font-family-poppins);
 
   --text-icon: 500 16px/150% var(--font-family-montserrat);
 
