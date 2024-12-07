@@ -56,6 +56,13 @@ body.forms {
     height: 20px;
   }
 
+  input[type="checkbox"] {
+    align-self: self-start;
+    cursor: pointer;
+    width: 36px;
+    height: 19px;
+  }
+
   h4 {
     font: var(--text-h4);
     color: var(--color-text-primary);
@@ -75,6 +82,27 @@ body.forms {
       width: 48px;
       height: 48px;
     }
+
+  }
+
+  .button {
+    width: 183px;
+    height: 48px;
+    border-radius: 8px;
+    font: var(--text-h4);
+
+    &#respostas {
+      border: 1px solid var(--color-text-highlight);
+      color: var(--color-text-highlight);
+      background-color: transparent;
+    }
+
+    &#matricula {
+      border: 1px solid var(--color-text-highlight);
+      color: var(--color-surface-primary);
+      background-color: var(--color-text-highlight);
+    }
+
 
   }
 
@@ -203,6 +231,34 @@ body.forms {
 
   div#declaration {
     
+    display: flex;
+    flex-direction: row;
+
+    input {
+      margin-right: 18px;
+    }
+
+    label {
+      font: var(--text-md);
+      color: var(--color-text-secondary);
+    }
+
+    span {
+      font: var(--text-h4);
+      color: var(--color-text-highlight);
+    }
+
   }
+
+  div#save {
+    display: inline-block;
+    text-align: right;
+
+    #matricula {
+      margin-left: 16px;
+    }
+  }
+
+
 
 }
