@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+
+  --calor-brand-light: #F67841;
+  --color-brand-mid: #F3541C;
+  --color-brand-dark: #E43A12;
+
+  --color-text-none: #A8A29E;
+  --color-text-primary: #292524;
+  --color-text-secondary: #57534E;
+  --color-text-tertiary: #8F8881;
+  --color-text-highlight: #E43A12;
+
+  --color-surface-primary: #FFFFFF;
+  --color-surface-secondary: #FEE7D6;
+  --color-surcace-disabled: #E7E5E4;
+
+  --color-stroke-default: #D6D3D1;
+  --color-stroke-highlight: #F3541C;
+
+  --color-semantic-error: #DC2626;
+
+  --color-orange: #F9A474;
+  --color-yellow: #FEDF6F;
+  --color-green: #C7D78D;
+  --color-blue: #B8CEDC;
+  --color-violet: #C3B2E7;
+  --color-pink: #F682A5;
+
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-montserrat: "Montserrat", sans-serif; 
+
+  --text-h0: 600 2.5rem/125% var(--font-family-poppins);
+  --text-h1: 600 2rem/125% var(--font-family-poppins);
+  --text-h2: 600 1.5rem/125% var(--font-family-poppins);
+  --text-h3: 600 1.25rem/125% var(--font-family-poppins);
+  --text-h4: 600 1rem/125% var(--font-family-poppins);
+
+  --text-md: 400 1rem/150% var(--font-family-poppins);
+  --text-sm: 400 0.875rem/140% var(--font-family-poppins);
+
+  --text-icon: 500 1rem/150% var(--font-family-montserrat);
+
+
+}
