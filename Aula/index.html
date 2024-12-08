@@ -33,8 +33,8 @@
           <div class="select-wrapper">
             <label for="gender">Sexo</label>
             <select name="gender" id="gender">
-              <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
               <option value="na">Prefiro não responder</option>
             </select>
           </div>
@@ -42,14 +42,17 @@
             <label for="medical-info">Informações médicas</label>
             <textarea id="medical-info" name="medical-info" rows="4" cols="40" maxlength="500" placeholder="Escreva aqui..."></textarea>
           </div>
-          <div class="file-wrapper">
+          <div class="droparea-wrapper">
+            <label for="birth-file">Certidão de nascimento</label>
+            <div class="dropzone">
               <input type="file" name="birth-file" id="birth-file">
               <img src="assets/icons/cloud-upload.svg" alt="Escolher arquivo">
               <p>Clique aqui para selecionar arquivos</p>
+            </div>
           </div>
 
 
-          
+
         </fieldset>
       </form>
     </main>
