@@ -20,7 +20,7 @@
         </div>
       </header>
       <form  method="post" enctype="multipart/form-data">
-        <fieldset id="info_child" class="forms">
+        <fieldset id="info_child">
           <legend>Informações da criança</legend>
           <div class="input-wrapper">
             <label for="fullname">Nome completo</label>
@@ -54,6 +54,121 @@
 
 
         </fieldset>
+        <fieldset id="info_adress">
+          <legend>Endereço residencial</legend>
+          <div class="input-wrapper">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" value="01234567">
+          </div>
+          <div class="double">
+            <div class="input-wrapper maior">
+              <label for="street">Rua</label>
+              <input type="text" name="street" id="street" value="Rua das Flores" disabled>
+            </div>
+            <div class="input-wrapper">
+              <label for="house-number">Número</label>
+              <input type="text" name="house-number" id="house-number" value="123">
+            </div>
+          </div>
+          <div class="double">
+            <div class="input-wrapper maior">
+              <label for="city">Cidade</label>
+              <input type="text" name="city" id="city" value="São Paulo" disabled>
+            </div>
+            <div class="input-wrapper">
+              <label for="state">Estado</label>
+              <input type="text" name="state" id="state" value="SP" disabled>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="info_guardian">
+          <legend>Informações do responsável</legend>
+          <div class="input-wrapper">
+            <label for="name_guardian">Nome do responsável</label>
+            <input type="text" name="name_guardian" id="name_guardian" value="Miguel Roberto Alves">
+            <small id="guardian_text">Principal responsável legal e contato de emergência</small>
+          </div>
+          <div class="input-wrapper">
+            <label for="phone_guardian">Telefone</label>
+            <input type="tel" name="phone_guardian" id="phone_guardian" value="10987654321">
+          </div>
+          <div class="input-wrapper">
+            <label for="email_guardian">E-mail</label>
+            <input type="email" name="email_guardian" id="email_guardian" value="papailegal123" required>
+            <div id="email-error">
+              <img src="assets/icons/alert-circle.svg" alt="alerta de erro">
+              <span>Insira um e-mail válido</span>
+            </div>
+          </div>
+        </fieldset>
+      
+        <fieldset id="enroll-options">
+          <legend>Opções de matrícula</legend>
+          <div>
+            <label>Selecione o turno de estudo</label>
+            <div class="radio-wrapper">
+              <div class="radio-inner">
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" id="morning" value="morning">
+                <div class="icon">
+                  <img src="assets/icons/sun-cloud-02.svg" alt="Turno da manhã">
+                  <label for="morning">Manhã</label>
+                </div>
+              </div>
+
+              <div class="radio-inner">
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" id="afternoon" value="afternoon">
+                <div class="icon">
+                  <img src="assets/icons/sun-02.svg" alt="Turno da tarde">
+                  <label for="afternoon">Tarde</label>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div id="sports">
+            <label for="">Em qual esporte você gostaria de inscrever seu filho?</label>
+            <div id="grid">
+            <div id="futebol"><input type="radio">
+              <div class="card">
+                <img src="assets/icons/football.svg" alt="Futebol"><p>Futebol</p></div>
+              </div>
+            <div id="basquete"><input type="radio">
+              <div class="card">
+                <img src="assets/icons/basketball-02.svg" alt="Basquete"><p>Basquete</p></div>
+              </div>
+            <div id="natacao"><input type="radio">
+              <div class="card">
+                <img src="assets/icons/swimming.svg" alt="Natação"><p>Natação</p></div>
+              </div>
+            <div id="yoga"><input type="radio">
+              <div class="card">
+                <img src="assets/icons/yoga-02.svg" alt="Yoga"><p>Yoga</p></div>
+              </div>
+            <div id="volei"><input type="radio">
+              <div class="card">
+                <img src="assets/icons/volleyball.svg" alt="Voleibol"><p>Volei</p></div>
+              </div>
+            <div id="luta"><input type="radio">
+              <div class="card">
+                <img src="assets/icons/boxing-glove-01.svg" alt="Lutas"><p>Luta</p></div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      
+        <div id="declaration" class="forms">
+          <input type="checkbox" name="" id="">
+          <label for="declaration">
+            Declaro que li e concordo com <span>os Termos e Condições</span> e com a <span>Política de Privacidade</span> da escola Estrela do Amanhã. 
+          </label>
+        </div>
+        <div id="save" class="forms">
+          <button id="respostas" class="button">Salvar respostas</button>
+          <button id="matricula" class="button">Fazer matrícula</button>
+        </div>
+
       </form>
     </main>
 

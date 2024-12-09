@@ -11,7 +11,7 @@ main {
 
   header {
     max-width: 33rem;
-    margin-left: auto;
+    /* margin-left: auto; */
 
     h2 {
       margin-block:1.5rem 0.5rem;
@@ -24,6 +24,18 @@ main {
     align-items: center;
     gap: 0.5rem ;
   }
+  
+  #info_adress .double {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem ;
+
+    & .maior {
+      flex:0 0 20.75rem;
+    }
+  }
+
+
 
 }
 

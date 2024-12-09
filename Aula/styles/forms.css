@@ -1,5 +1,8 @@
 form {
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 fieldset {
@@ -16,18 +19,28 @@ input, textarea, select {
   border: 1px solid var(--color-stroke-default);
   padding:  0.75rem 1rem;
   font: var(--text-md);
+
+  &:disabled {
+    background-color: var(--color-surcace-disabled);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-stroke-default);
+  }
+
+  &:invalid {
+    border: 0.125rem solid var(--color-semantic-error);
+  }
+
 }
 
 label {
   font: var(--text-sm);
   color: var(--color-text-secondary);
-  display: ;
+  /* display: ; */
 }
 
 legend {
   font: var(--text-h4);
   margin-bottom: 1.5rem;
-  
   display: block;
   margin-bottom: 0.25rem;
 }
@@ -105,5 +118,103 @@ select {
       color: var(--color-text-tertiary);
     }
 
+  }
+}
+
+.input-wrapper:has(:disabled) {
+  opacity: 0.5;
+}
+
+#guardian_text {
+  font: var(--text-sm);
+  color: var(--color-text-none);
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+input[type="email"]  {
+
+  &:invalid + #email-error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    font: var(--text-sm);
+    color: var(--color-semantic-error);
+    margin-top: 0.25rem;
+  }
+
+  &:valid + #email-error {
+    display: none;
+  }
+}
+
+label + .radio-wrapper {
+  margin-top: 1rem;
+}
+
+.radio-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.radio-inner {
+  border: 1px solid var(--color-stroke-default);
+  border-radius: 0.5rem;
+  height: 8rem;
+  width: 100%;
+  position: relative;
+
+  input[type="radio"]  {
+    opacity: 0.5;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+  }
+
+  .radio-image {
+    background-image: url(../assets/icons/circle.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  &:hover, &:focus-within {
+    border: 1px solid var(--color-stroke-highlight) ;
+
+    & .radio-image {
+      background-image: url(../assets/icons/circle-hover.svg);
+    }
+  }
+
+  &:has(:checked) {
+    border: 2px solid var(--color-stroke-highlight);
+
+    & .radio-image {
+      background-image: url(../assets/icons/checkmark-circle.svg);
+    }
+  }
+
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 2rem 0rem 1rem; 
+  
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  label {
+    font: var(--text-icon);
+    color: var(--color-text-primary);
   }
 }
